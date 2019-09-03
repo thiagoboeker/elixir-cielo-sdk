@@ -55,7 +55,7 @@ end
 
 defmodule CieloSdk.Api.Transaction.CreditCard do
   @moduledoc false
-  
+
   use Ecto.Schema
   import Ecto.Changeset
   import CieloSdk.Api.CreditCard.Tokenizer, only: [is_tokenized: 1]

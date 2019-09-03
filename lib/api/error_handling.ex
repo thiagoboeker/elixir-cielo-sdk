@@ -1,6 +1,6 @@
 defmodule CieloSdk.Api.ErrorHandling do
   @moduledoc false
-  
+
   import Ecto.Changeset
 
   def check_errors(changeset, params) do

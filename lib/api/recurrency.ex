@@ -1,6 +1,6 @@
 defmodule CieloSdk.Api.Recurrency do
   @moduledoc false
-  
+
   alias CieloSdk
 
   def url(rec_id, resource) do

@@ -1,6 +1,6 @@
 defmodule CieloSdk.Api.Customer do
   @moduledoc false
-  
+
   use Ecto.Schema
   import Ecto.Changeset
   alias CieloSdk.Api.Address

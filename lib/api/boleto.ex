@@ -33,7 +33,7 @@ end
 
 defmodule CieloSdk.Api.Boleto.Payment do
   @moduledoc false
-  
+
   use Ecto.Schema
   import Ecto.Changeset
 
