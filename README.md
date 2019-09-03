@@ -59,7 +59,7 @@ The JSON payload that is passed to _*request*_ is filtered in a changeset as all
 
 ```elixir
   # {error, err} in case of any error in the changeset
-  {:ok, changeset} = Transaction.validate(%Transaction, params)
+  {:ok, changeset} = Transaction.validate(%Transaction{}, params)
 ```
 
 ## TODO
