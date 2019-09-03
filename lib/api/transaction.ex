@@ -1,11 +1,11 @@
-defmodule CieloSdk.Api.Transaction do
+defmodule CieloSdk.Api.PaymentCC do
   @moduledoc false
 
   use Ecto.Schema
   import Ecto.Changeset
   alias CieloSdk
   alias CieloSdk.Api.Customer
-  alias CieloSdk.Api.Transaction.Payment
+  alias CieloSdk.Api.PaymentCC.Payment
   alias CieloSdk.Api.ErrorHandling, as: Err
 
   embedded_schema do

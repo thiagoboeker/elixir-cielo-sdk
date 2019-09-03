@@ -1,10 +1,10 @@
-defmodule CieloSdk.Api.Transaction.Payment do
+defmodule CieloSdk.Api.PaymentCC.Payment do
   @moduledoc false
 
   use Ecto.Schema
   import Ecto.Changeset
-  alias CieloSdk.Api.Transaction.CreditCard
-  alias CieloSdk.Api.Transaction.Payment.RecurrentPayment
+  alias CieloSdk.Api.PaymentCC.CreditCard
+  alias CieloSdk.Api.PaymentCC.Payment.RecurrentPayment
 
   embedded_schema do
     field(:Type, :string)
@@ -45,7 +45,7 @@ defmodule CieloSdk.Api.Transaction.Payment do
   end
 end
 
-defmodule CieloSdk.Api.Transaction.Payment.RecurrentPayment do
+defmodule CieloSdk.Api.PaymentCC.Payment.RecurrentPayment do
   @moduledoc false
 
   use Ecto.Schema

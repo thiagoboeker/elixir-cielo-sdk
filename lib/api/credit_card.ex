@@ -1,4 +1,4 @@
-defmodule CieloSdk.Api.Transaction.CreditCard.CardOnFile do
+defmodule CieloSdk.Api.PaymentCC.CreditCard.CardOnFile do
   @moduledoc false
 
   use Ecto.Schema
@@ -53,13 +53,13 @@ defmodule CieloSdk.Api.CreditCard.Tokenizer do
   end
 end
 
-defmodule CieloSdk.Api.Transaction.CreditCard do
+defmodule CieloSdk.Api.PaymentCC.CreditCard do
   @moduledoc false
 
   use Ecto.Schema
   import Ecto.Changeset
   import CieloSdk.Api.CreditCard.Tokenizer, only: [is_tokenized: 1]
-  alias CieloSdk.Api.Transaction.CreditCard.CardOnFile
+  alias CieloSdk.Api.PaymentCC.CreditCard.CardOnFile
   alias CieloSdk.Api.ErrorHandling, as: Err
   alias CieloSdk
 

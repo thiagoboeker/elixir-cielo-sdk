@@ -50,14 +50,14 @@ The you can use it to make API calls:
 ```
 
 ```elixir
-  {:ok, %{body: b, headers: h, request: r, status_code: code}} = Transaction.request(%Transaction{}, stub, params)
+  {:ok, %{body: b, headers: h, request: r, status_code: code}} = PaymentCC.request(%PaymentCC{}, stub, params)
 ```
 
 The JSON payload that is passed to _*request*_ is filtered in a changeset as all API calls before been executed. To check if the payload is valid one can use.
 
 ```elixir
   # {error, err} in case of any error in the changeset
-  {:ok, changeset} = Transaction.validate(%Transaction{}, params)
+  {:ok, changeset} = PaymentCC.validate(%PaymentCC{}, params)
 ```
 
 ## TODO
