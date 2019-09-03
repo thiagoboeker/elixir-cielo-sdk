@@ -1,7 +1,5 @@
 # CieloSdk
 
-**TODO: Add description**
-
 ## Installation
 
 This package is not in Hex yet so the way to install is:
